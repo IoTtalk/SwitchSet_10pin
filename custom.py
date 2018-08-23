@@ -1,7 +1,7 @@
 import DAN
 
 ServerIP='IP' #P=None:AutoSearch, or ='IP':Connect to this IP
-Comm_interval = 10 # unit:second
+Comm_interval = 0.2 # unit:second
 
 def profile_init():
     DAN.profile['dm_name']='SwitchSet'
