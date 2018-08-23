@@ -5,7 +5,7 @@ Comm_interval = 10 # unit:second
 
 def profile_init():
     DAN.profile['dm_name']='SwitchSet'
-    DAN.profile['d_name']='Set2' #DAN.get_mac_addr()[-4:]
+    DAN.profile['d_name']='MySet' #DAN.get_mac_addr()[-4:]
 
 def odf():  # int only
     return [
