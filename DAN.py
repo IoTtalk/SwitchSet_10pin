@@ -63,7 +63,7 @@ def register_device(addr):
 
 def device_registration_with_retry(IP=None, addr=None):
     if IP != None:
-        csmapi.ENDPOINT = 'http://' + IP + ':9999'
+        csmapi.ENDPOINT = IP
     success = False
     while not success:
         try:
