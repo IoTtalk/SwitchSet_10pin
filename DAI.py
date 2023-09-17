@@ -41,7 +41,7 @@ def on_connect(client, userdata, flags, rc):
         print('MQTT broker: {}'.format(broker))
         LED_flash(1)
         if odf_list == []:
-            print('ODF_list is not exist.')
+            print('ODF list is empty.')
             return
         topic_list=[]
         for odf in odf_list:
@@ -98,6 +98,7 @@ incomming = {}
 for f_name in [t[0] for t in odf_list]:
     incomming[f_name] = 0
 
+if idf_list == []: print('IDF list is empty.')
 reConnecting = 0
 while True:
     try:
