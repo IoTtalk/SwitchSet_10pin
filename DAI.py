@@ -65,7 +65,7 @@ def on_message(client, userdata, msg):
     data = samples['samples'][0][1]
     ###ODFdir{'f_name': ('pin_name', index)}### just note
     print('{}: {}, {}'.format(samples['samples'][0][0], ODFdir[odf][0], str(int(data[ODFdir[odf][1]]))))
-    Bclient.put(ODFdir[odf][0], str(int(data[ODFdir[odf][0]])))
+    Bclient.put(ODFdir[odf][0], str(int(data[ODFdir[odf][1]])))
     os.system(r'echo "none" > /sys/class/leds/ds:green:wlan/trigger')
 
 def mqtt_pub(client, deviceId, IDF, data):
