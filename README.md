@@ -9,11 +9,11 @@ Output device features: 'Switch-O1' ~ 'Switch-O10'
 然後ssh登入到AR9331上面的OpenWRT上，依序執行下列指令進行DA安裝：
 
 ```
-wget http://yun.iottalk.tw/yunDAinst.tar.gz
-tar zvxf yunDAinst.tar.gz
-rm yunDAinst.tar.gz
-chmod 700 yunDAinstall.sh
-./yunDAinstall.sh
+wget http://yun.iottalk.tw/yunSW10DAinstall.tar.gz
+tar zvxf yunSW10DAinstall.tar.gz
+rm yunSW10DAinstall.tar.gz
+chmod 700 yunSW10DAinstall.sh
+./yunSW10DAinstall.sh
 ```
 
 執行 yunDAinstall.sh 會需要運作一段時間，尤其執行到pip安裝時，會等很久，要有耐心等候，不要將之中斷。 安裝完畢後自動進入編輯config.py的畫面(vi config.py)，
